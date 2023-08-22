@@ -1,0 +1,113 @@
+:root {
+    --no-list-style: none;
+}
+
+*{
+  font-family: Helvetica ;
+  font-size: 15px;
+  border: 1px solid red;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-left img {
+    height: 30px;
+    margin-right:100px;
+}
+
+.header-middle form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.header-middle input[type="text"] {
+    border: none;
+    padding: 10px 15px;
+    width: 500px;
+}
+
+.header-middle button {
+    padding: 0 20px;
+    background: #f8f8f8;
+    border: none;
+    border-radius: 0 25px 25px 0;
+}
+
+.header-right a {
+    margin-left: 20px;
+}
+
+.header-right img {
+    height: 30px;
+}
+
+/* /////////////section aside/////////////// */
+aside {
+    margin-top: -80px;
+    background-color: #fbfbfb;
+    width:250px ;
+    list-style-type: none;
+    gap: 10px;
+   padding: 10px;
+}
+
+
+.entete{
+font-style: bold;
+}
+/* aside ul {
+
+} */
+
+ /* ////////////////////////// */
+
+
+ .header-two ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: var(--no-list-style);
+ }
+ .header-two li{
+    align-items: center;
+        justify-content: center;
+    display: flex;
+background-color: rgb(45, 46, 46);
+border-radius: 10px;
+padding: 10px;
+height: 10px;
+color: white;
+ }
+
+
+section{
+    /* list-style-type: none; */
+    list-style-type: var(--no-list-style);
+}
+
+.first_h4 h4{
+    display: flex;
+    padding: 5px;
+
+background-color:rgb(45, 46, 46);
+height: 20px;
+width: 50%;
+border-radius: 10px;
+}
+
+
+/* /////////////section card video display grid /////////////// */
+
+
+
+
+/* /////////////                                 /////////////// */
