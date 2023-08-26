@@ -1,10 +1,9 @@
-##Problemen résolving
-
-
-
+##Problem résolving
 Voici un résumé du problème rencontré et de sa solution :
 
-##Problème : 
+
+
+##Problème 1 : 
 
 Lors de la création d'une barre de navigation avec une liste d'onglets, un défilement horizontal apparaissait de manière inesthétique lorsqu'il y avait trop d'éléments. Je souhaitais conserver la possibilité de défiler pour accéder à tous les onglets, mais masquer visuellement la barre de défilement.
 
@@ -24,3 +23,10 @@ Cette solution permet d'avoir une barre de navigation responsive, avec la possib
 
 ## ressources 
 -claude gpt
+
+
+##Problème 2:  lorsque je deplace mon sidebar mon display grid defini dans le main bouge simultanement 
+
+
+##Problème 3: lorsque fixer mon header pour le defilement les contenu de page passe sous header
+++questionnement++: comment bloquer plusieur section de ma page pour ne laisser que celle choisie
