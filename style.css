@@ -8,8 +8,15 @@
 *{
 font-family: 'Roboto', Work Sans, sans-serif;
   font-size: 15px;
-  /* border: 0.8px solid rgb(90, 78, 78); */
+  border: 0.5px solid rgb(90, 78, 78);
 }  
+
+
+
+/* .aside,
+.header {
+
+} */
 
 
 
@@ -65,12 +72,13 @@ aside {
     border-radius: 0 25px 25px 0;
 }
 
-.header-right a {
-    margin-left: 20px;
+.header-right svg{
+    margin-left: -200px;
 }
 
 .header-right img {
-    height: 30px;
+
+    height: 3px;
 }
 
 
@@ -81,8 +89,8 @@ aside {
     margin-top: -80px;
     /* bizzar */
     /* background-color: #ffffff; */
-    /* background-color: aliceblue; */
-    width:250px ;
+    background-color: aliceblue;
+    width:190px ;
    padding: 20px;
    /* font-weight: 100; */
 }
@@ -129,18 +137,20 @@ opacity: 0.5;
 
  /* //////////// fin aside ////////////// */
 
-
+/* 
   .tabHeader {
+  
     display: flex;
     justify-content: center;
-    scroll-snap-type: none;
-    scroll-behavior: auto;
+  
   }
+
+  
 
   .tabHeader_chd {
     margin-left: 17%;
     width: 75%;
- 
+
   }
 
 
@@ -159,10 +169,51 @@ color: white;
 .tabHeader ul {
     display: flex;
     gap: 20px;
-    list-style-type: none;
-    overflow:auto;  /* Permet un défilement horizontal si nécessaire */
+
+    overflow:auto;  
+
+} */
+
+.tab {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin-left: 250px;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.tablist {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.tab ul {
+    list-style-type: var(--no-list-style);
+    padding: 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.tab ul::-webkit-scrollbar {
+display: none;
 
 }
+
+.tab li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 15px;
+    height: 10px;
+    color: black;
+}
+
 
 
 
@@ -190,7 +241,6 @@ border-radius: 10px;
     margin-top: -110.50rem;
     padding: 1.25rem;
     row-gap: 20px;
-
 }
 .ctr_Grid{
     display: grid;
