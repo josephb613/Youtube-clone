@@ -176,10 +176,8 @@ border: 0.5px solid rgb(205, 204, 204);
     margin-top: 15px;
 }
 
-section :hover {
-    transition: color 0.10s ease-out;
-    background-color: rgb(213, 212, 212);
-    opacity: 0.5;
+section {
+
     border-radius: 70px;
     width: 200px;
 }
@@ -243,7 +241,7 @@ border: var(--border-color-elements);
 .card-content img{
 
     margin-top: 12px;
-    width: 40px;
+    width: 35px;
     height: 40%;
     border-radius: 20px;
 }
@@ -281,17 +279,17 @@ border: var(--border-color-elements);
 
 .card-footer style{
    margin-left: 100px;
+    color: #757575;
 
 }
 
 .card-date-vue {
     display: var(--display-flex);
-    /* justify-content: center; */
-    gap: 5px;
-    /* align-items: center; */
-    /* margin-left: -50px; */
+    font-weight: 500;
+    color: #757575;
+    gap: 2px;
     font-size: 12px;
-   
+
 }
 
 
