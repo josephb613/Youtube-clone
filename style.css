@@ -5,16 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 
-
-/* ###################### test visuelle ############################# */
+/* ###################### Test visuelle ############################# */
 :root {
-    /* --bg-color-body:cadetblue ;
-      --bg-color-header:indigo;
-        --bg-color-tabbar:aquamarine; */
+    /* --bg-color-body:cadetblue ; */
+      /* --bg-color-header:indigo; */
+        /* --bg-color-tabbar:aquamarine; */
     /* --bg-color-sidebar: rgb(189, 212, 255); */
     /* --bg-color-main:aqua; */
-    /* --border-color: 0.5px solid rgb(90, 78, 78);  */
-    --border-tablist-ul: 0.5px solid rgb(15, 14, 14);
+    /* --border-color-globale: 0.5px solid rgb(90, 78, 78);  */
+    /* --border-color-elements: 1px solid black;
+    --border-tablist-ul: 0.5px solid rgb(15, 14, 14); */
     /* --bg-color-displayGrid:aliceblue; */
     /* --bg-color-ctr_Grid:blanchedalmond; */
 
@@ -23,13 +23,15 @@
 
 
 
-
-
 * {
     font-family: 'Roboto', Work Sans, sans-serif;
     font-size: 15px;
-    border: var(--border-color);
+    font-style: normal;
+    font-weight: 300;
+    border: var(--border-color-global);
 }
+
+
 
 
 
@@ -39,18 +41,17 @@ body {
 }
 
 header {
+    border: var(--border-color-elements);
     background-color: var(--bg-color-header);
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
+    background-color: white;
     color: #fff;
     padding: 10px;
-    z-index: 1000;
+    /* z-index: 1000; */
+
 }
-
-/* ############################################### */
-
 
 .header-middle form {
     margin-left: 280px;
@@ -74,44 +75,33 @@ header {
 
 
 
-/* //////////// tabbar ////////////// */
 
-/* .container{
-    background-color: #333;
-    
-} */
 
-.tab{
-        position: fixed;
-            /* top: 0; */
-            /* left: 0; */
-            height: 60px;
-            width: 100%;
-            z-index: 1000;
-            background-color: white;
-            /* margin-top: 110px; */
-}
-.tab {
-    display: var(--display-flex);
-    width: 80%;
-    margin-left: 240px;
-    justify-content: center;
-    /* background-color: var(--bg-color-tabbar); */
-}
+
+/* //////////////////////////////////////////// */
+/* //////////////////tab////////////////////// */
+/* ////////////////////////////////////////// */
+
+
 
 .tablist {
-    height: 0px;
-    width: 90%;
+    border: var(--border-color-elements);
+    background-color: white;
+    top: 89px;
+    position: fixed;
+    margin-left: 240px;
+    width: 80%;
 }
 
 .tab ul {
+    white-space: nowrap;
+    /* cette balise permet de mettre les texte en ligne droite */
     /* border: var(--border-tablist-ul); */
     list-style-type: var(--no-list-style);
     padding: 2px;
-    /* width: 100%; */
     display: flex;
-    gap: 15px;
-    overflow-x: scroll;
+    gap: 20px;
+    overflow: auto;
 }
 
 .tab ul::-webkit-scrollbar {
@@ -120,7 +110,6 @@ header {
 }
 
 .tab li {
-    /* display: flex; */
     display: var(--display-flex);
     background-color: #ccc;
     justify-content: center;
@@ -131,41 +120,47 @@ header {
     color: black;
 }
 
-.tab li {
+/* //////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
 
-    width: 100%;
-    /* border: 1px solid rgb(15, 14, 14); */
 
+
+
+
+
+
+
+.parentcontainer {
+    display: flex;
+    margin-top: 60px;
 }
 
-
-.parentcontainer{
-display: flex;
- margin-top: 60px;
-padding: auto;
-}
- 
 
 
 
 /* /////////////--Aside--/////////////// */
-
-
 .sidebar {
+    border: var(--border-color-elements);
     width: 200px;
     padding: 10px;
     position: fixed;
     /* Fixed position for the sidebar */
-    top: 60px;
+    top: 100px;
     /* Adjust for header height */
     bottom: 0;
     overflow-y: auto;
 }
 
-/* hr {
-    width: 200px;
-    margin-left: -4px;
-} */
+.asideContainer {
+    margin-top: -20px;
+    /* alignement vertical entete tabbar en sidebar*/
+}
+
+hr {
+
+border: 0.5px solid rgb(205, 204, 204);
+}
 
 .asideSection2 img {
     border-radius: 20px;
@@ -173,13 +168,10 @@ padding: auto;
 
 
 .asideSection4 div {
-
-    width: 130px;
     display: var(--display-flex);
 }
 
 #generale div {
-
     gap: 20px;
     display: var(--display-flex);
     margin-top: 15px;
@@ -187,7 +179,7 @@ padding: auto;
 
 section :hover {
     transition: color 0.10s ease-out;
-    background-color: rgb(234, 168, 103);
+    background-color: rgb(213, 212, 212);
     opacity: 0.5;
     border-radius: 70px;
     width: 200px;
@@ -196,56 +188,45 @@ section :hover {
 
 
 /* /////////////Main .grid /////////////// */
+main {
+border: var(--border-color-elements);
+}
+
 
 .main-content {
-    margin-left: 100px;
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-/* main {
 
-    margin-left: 300px;
+    margin-top: 175px;
+    margin-left: 230px;
+    padding: 0px;
+    /* overflow: auto; */
 
-    background-color: var(--bg-color-main);
-} */
-
-.display-Grid {
-
-    width: 1000px;
-    margin-left: 120px;
-
-    /* background-color: var(--bg-color-displayGrid); */
 }
 
-.grid-content{
-    overflow: hidden;
+.grid-content {
+
+    /* overflow: hidden; */
     background-color: var(--bg-color-ctr_Grid);
     display: grid;
-    grid-template-columns: 340px 340px 340px;
-
-    gap: 23px;
+    grid-template-columns: 360px 360px 360px;
+    gap: 20px;
     padding: 5px;
     justify-content: center;
 }
 
-.grid-content{
-    width: 1200px;
-    /* ce parametre permet d'elargire l'espacement de de card img */
-}
 
 .boxe {
+
     background-color: #ccc;
-    /* height: 200px;
-    border-radius: 0.63em; */
+    height: 200px;
+    border-radius: 0.63em;
 
 }
 
-
 .card {
-    width: 350px;
+    width: 360px;
     border-radius: 10px;
     overflow: hidden;
+    /* overflow: hidden; pour cacher le debordement des image svg */
 
 }
 
@@ -279,6 +260,10 @@ section :hover {
     font-size: 12px;
     padding-bottom: 10px;
 }
+
+
+
+
 
 footer {
     margin-top: 580px;
