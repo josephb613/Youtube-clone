@@ -13,8 +13,8 @@
     /* --bg-color-sidebar: rgb(189, 212, 255); */
     /* --bg-color-main:aqua; */
     /* --border-color-globale: 0.5px solid rgb(90, 78, 78);  */
-    /* --border-color-elements: 1px solid black;
-    --border-tablist-ul: 0.5px solid rgb(15, 14, 14); */
+    /* --border-color-elements: 1px solid black; */
+    /* --border-tablist-ul: 0.5px solid rgb(15, 14, 14); */
     /* --bg-color-displayGrid:aliceblue; */
     /* --bg-color-ctr_Grid:blanchedalmond; */
 
@@ -111,7 +111,8 @@ header {
 
 .tab li {
     display: var(--display-flex);
-    background-color: #ccc;
+    background-color:rgb(237, 237, 237);
+
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
@@ -131,12 +132,10 @@ header {
 
 
 
-.parentcontainer {
+/* .parentcontainer {
     display: flex;
     margin-top: 60px;
-}
-
-
+} */
 
 
 /* /////////////--Aside--/////////////// */
@@ -214,13 +213,9 @@ border: var(--border-color-elements);
 }
 
 
-.boxe {
 
-    background-color: #ccc;
-    height: 200px;
-    border-radius: 0.63em;
 
-}
+
 
 .card {
     width: 360px;
@@ -235,30 +230,67 @@ border: var(--border-color-elements);
     height: auto;
 }
 
-.card-content {
-    padding: 10px;
+.card-content  {
+    display: var(--display-flex);
+    gap: 12px;
+    border: var(--border-color-elements);
+    /* padding: 10px; */
+    /* background-color:rgb(255, 205, 111); */
+}
 
+
+
+.card-content img{
+
+    margin-top: 12px;
+    height: 40%;
+    border-radius: 20px;
 }
 
 .card-title {
     font-size: 18px;
     margin: 0;
+   
 }
 
+/* .card-flex{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+} */
+.card-flex img{
+    height: 40px;
+    border-radius: 40px;
+}
+
+
 .card-description {
-    font-size: 14px;
+
+        font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+        font-weight: 600;
 }
 
 .card-description img {
     border-radius: 40px;
 }
 
-.card-footer {
+.card-footer style{
+   margin-left: 100px;
+
+}
+
+.card-date-vue {
     display: var(--display-flex);
-    justify-content: space-between;
-    margin-top: 10px;
+    /* justify-content: center; */
+    gap: 5px;
+    /* align-items: center; */
+    /* margin-left: -50px; */
     font-size: 12px;
-    padding-bottom: 10px;
+   
 }
 
 
