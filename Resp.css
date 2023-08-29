@@ -1,0 +1,70 @@
+/* Media queries for responsiveness */
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 15px;
+        /* Adjust margin as needed */
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content img {
+        width: 25px;
+        height: auto;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .card-footer .style {
+        margin-left: 50px;
+        font-size: 12px;
+    }
+
+    .card-date-vue {
+        font-size: 10px;
+    }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+    .main-content {
+        margin-left: 10px;
+        /* Adjust margin as needed */
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content img {
+        width: 20px;
+        height: auto;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+    .card-footer .style {
+        margin-left: 30px;
+        font-size: 10px;
+    }
+
+    .card-date-vue {
+        font-size: 8px;
+    }
+}

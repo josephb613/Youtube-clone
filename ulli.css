@@ -1,0 +1,58 @@
+<aside class="sidebar">
+    <div class="asideContainer">
+        <ul class="asideSection1">
+            <li>
+                <div>
+                    <span>
+                        <svg ...> <!-- Ici va le contenu du premier élément -->
+                        </svg>
+                    </span>
+                    Accueil
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>
+                        <svg ...> <!-- Ici va le contenu du deuxième élément -->
+                        </svg>
+                    </span>
+                    Shorts
+                </div>
+            </li>
+            <!-- ... Ajoutez d'autres éléments ici ... -->
+        </ul>
+        <hr>
+        <ul class="asideSection2">
+            <li>
+                <h4>Abonnements</h4>
+            </li>
+            <li>
+                <div>
+                    <span>
+                        <img ...> <!-- Ici va le contenu du premier abonnement -->
+                        </span>
+                    Tech & Co
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>
+                        <img ...> <!-- Ici va le contenu du deuxième abonnement -->
+                        </span>
+                    ACADEE
+                </div>
+            </li>
+            <!-- ... Ajoutez d'autres abonnements ici ... -->
+            <li>
+                <div class="svg">
+                    <span>
+                        <svg ...> <!-- Ici va le contenu de "Afficher les 10 éléments" -->
+                        </svg>
+                    </span>
+                    Afficher les 10 éléments
+                </div>
+            </li>
+        </ul>
+        <!-- ... Ajoutez les autres sections ul/li ... -->
+    </div>
+</aside>
