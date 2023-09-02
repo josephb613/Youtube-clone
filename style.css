@@ -263,6 +263,12 @@ border: var(--border-color-elements);
 .card-flex img{
     height: 40px;
     border-radius: 40px;
+text-decoration: none;
+}
+
+.card-flex a{
+text-decoration: none;
+color: black;
 }
 
 
